@@ -1,7 +1,7 @@
 # PinCor
 ### Pindai Corona
 
-Aplikasi Edukasi dan Data Covid-19 Menggunakan teknologi AR Image Target dan API
+Aplikasi Edukasi dan Data Covid-19 Menggunakan teknologi AR Image Target dan JSON:API
 Aplikasi ini memiliki Fitur untuk menjalankan Video Edukasi dan Menampilkan Data Total Covid-19 di Indonesia
 
 #### Dibuat menggunakan
