@@ -4,12 +4,14 @@ using UnityEngine;
 using SimpleJSON;
 using UnityEngine.Networking;
 using TMPro;
+using System;
 
 public class LoadJSON : MonoBehaviour
 {
     public TMP_Text jumlah_positif;
     public TMP_Text jumlah_sembuh;
     public TMP_Text jumlah_meninggal;
+    public TMP_Text tanggal;
 
     private void Start() {
         GetJSONData();
@@ -50,7 +52,8 @@ public class LoadJSON : MonoBehaviour
                         jumlah_positif.text = jsonData["update"]["total"]["jumlah_positif"].Value;
                         jumlah_sembuh.text = jsonData["update"]["total"]["jumlah_sembuh"].Value;
                         jumlah_meninggal.text = jsonData["update"]["total"]["jumlah_meninggal"].Value;
-                        
+                        string time = System.DateTime.UtcNow.ToLocalTime().ToString("dd-MM-yyyy");
+                        tanggal.text = time;
                     }
                 }
             }
